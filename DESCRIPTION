@@ -1,0 +1,13 @@
+Package: category
+Type: Package
+Title: Category extends factors and levels
+Version: 0.1
+Date: 2011-10-29
+Author: Edwin de Jonge
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Description: Category extends factors and levels
+License: GPL-3
+LazyLoad: yes
+Collate:
+    'categories.R'
+    'categorical.R'
