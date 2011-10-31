@@ -14,3 +14,15 @@ categories <- function(x){
   x
 }
 
+label <- function(x, labels=list()){
+  cats <- cbind(categories(x), as.data.frame(labels))
+  categories(x) <- cats
+  x
+}
+
+relabel <- function(x, labelname){
+  cats <- categories(x)
+  levels(x) <- cats[[labelname]]
+  x
+}
+
