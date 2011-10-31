@@ -1,2 +1,4 @@
 export("categories<-")
 export(categories)
+export(is.categorical)
+export(print.categorical)

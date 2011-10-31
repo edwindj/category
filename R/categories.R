@@ -11,4 +11,6 @@ categories <- function(x){
 `categories<-` <- function(x, value){
   # TODO check value if it is a data.frame and set levels to
   attr(x, "categories") <- value
+  x
 }
+

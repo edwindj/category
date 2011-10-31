@@ -25,4 +25,4 @@ print.categorical <- function(x){
 }
 
 # gender <- categorical(c("male", "female", "male"))
-# gender
+# categories(gender)
