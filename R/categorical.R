@@ -34,7 +34,9 @@ print.categorical <- function(x){
   cat("Categories:", levels(x))
 }
 
- gender <- categorical(c("male", "female", "male"))
- categories(gender)
- gender2 <- label(gender, list(french=c("feminine", "masculien")))
-categories(gender2)
+#  gender <- categorical(c("male", "female", "male"))
+#  categories(gender)
+#  gender2 <- label(gender, list(french=c("féminine", "masculine")))
+#  gender2
+#  categories(gender2)
+#  relabel(gender2, "french")
