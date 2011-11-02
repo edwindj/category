@@ -11,3 +11,4 @@ LazyLoad: yes
 Collate:
     'categories.R'
     'categorical.R'
+    'labels.R'

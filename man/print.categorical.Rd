@@ -2,10 +2,12 @@
 \alias{print.categorical}
 \title{Create a categorical vector}
 \usage{
-  print.categorical(x)
+  \method{print}{categorical} (x)
+}
+\arguments{
+  \item{x}{categorical vector'}
 }
 \description{
-  A categorical vector is an extended \code{factor} with
-  extra attributes
+  Create a categorical vector
 }
 

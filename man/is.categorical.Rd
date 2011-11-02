@@ -1,11 +1,16 @@
 \name{is.categorical}
 \alias{is.categorical}
-\title{Create a categorical vector}
+\title{Check if vector is a categorical vector}
 \usage{
   is.categorical(x)
 }
+\arguments{
+  \item{x}{categorical vector}
+}
+\value{
+  TRUE if vector is categorical
+}
 \description{
-  A categorical vector is an extended \code{factor} with
-  extra attributes
+  Check if vector is a categorical vector
 }
 
