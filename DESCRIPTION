@@ -12,3 +12,4 @@ Collate:
     'categories.R'
     'categorical.R'
     'labels.R'
+    'pkg.R'

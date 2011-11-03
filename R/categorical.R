@@ -1,7 +1,7 @@
 #' Create a categorical vector
 #'
-#' Creating a categorical vector is almost identical to creating a factor.
 #' A categorical vector is an extended \code{factor} with extra attributes
+#' Creating a categorical vector is almost identical to creating a factor.
 #' @param x \code{vector} to be coerced to categorical
 #' @param cats optional \code{data.frame} with category attributes
 #' @param levels optional \code{vector} with levels
@@ -29,7 +29,7 @@ categorical <- function(x=character(), cats, levels, labels=levels, ...){
    f
 }
 
-#' Check if vector is a categorical vector
+#' Check if a vector is a categorical vector
 #'
 #' @param x categorical vector
 #' @return TRUE if vector is categorical
@@ -38,7 +38,7 @@ is.categorical <- function(x) inherits(x, "categorical")
 
 #' Coerce a vector to categorical
 #'
-#' A categorical vector is an extended \code{factor} with extra attributes
+#' A \code{\link{categorical}} vector is an extended \code{factor} with extra attributes
 #' @param x categorical vector
 #' @param ... not used
 #' @export
@@ -51,10 +51,11 @@ as.categorical <- function(x, ...){
   f  
 } 
 
-#' Create a categorical vector
+#' Print a categorical vector
 #'
+#' Print a \code{\link{categorical}} vector
 #' @method print categorical
-#' @param x categorical vector'
+#' @param x categorical vector
 print.categorical <- function(x){
   cats <- levels(x)[x[1:min(length(x),10)]]
   print(noquote(cats))

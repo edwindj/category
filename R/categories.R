@@ -1,4 +1,6 @@
-#' Returns categories
+#' Returns categories of a categorical vector
+#' 
+#' Return categories of a \code{\link{categorical}} vector
 #' @rdname categories
 #' @param x \code{categorical}
 #' @export
@@ -7,6 +9,8 @@ categories <- function(x){
 }
 
 #' Number of categories
+#' 
+#' Return the number of categories
 #' @rdname categories
 #' @return number of categories
 #' @export
@@ -15,9 +19,10 @@ ncategories <- function(x){
 }
 
 
-#' Set categories
+#' Set categories informations
 #' @rdname categories
-#' @param value \code{data.frame} with information on categories
+#' @param value \code{data.frame} with information on categories. 
+#' Each row is a category.
 #' @usage categories(x) <- value
 #' @export
 `categories<-` <- function(x, value){

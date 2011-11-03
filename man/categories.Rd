@@ -2,7 +2,7 @@
 \alias{categories}
 \alias{categories<-}
 \alias{ncategories}
-\title{Returns categories}
+\title{Returns categories of a categorical vector}
 \usage{
   categories(x)
 
@@ -14,16 +14,16 @@
   \item{x}{\code{categorical}}
 
   \item{value}{\code{data.frame} with information on
-  categories}
+  categories. Each row is a category.}
 }
 \value{
   number of categories
 }
 \description{
-  Returns categories
+  Return categories of a \code{\link{categorical}} vector
 
-  Number of categories
+  Return the number of categories
 
-  Set categories
+  Set categories informations
 }
 
