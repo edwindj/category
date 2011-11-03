@@ -10,7 +10,7 @@
   \item{...}{not used}
 }
 \description{
-  A categorical vector is an extended \code{factor} with
-  extra attributes
+  A \code{\link{categorical}} vector is an extended
+  \code{factor} with extra attributes
 }
 

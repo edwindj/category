@@ -1,8 +1,8 @@
 \docType{package}
 \name{category}
 \alias{category}
-\title{Category is utility package for categorical data}
+\title{Utilities for categorical data}
 \description{
-  Category is utility package for categorical data
+  Category is utility package for categorical data.
 }
 

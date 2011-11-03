@@ -1,6 +1,6 @@
 \name{is.categorical}
 \alias{is.categorical}
-\title{Check if vector is a categorical vector}
+\title{Check if a vector is a categorical vector}
 \usage{
   is.categorical(x)
 }
@@ -11,6 +11,6 @@
   TRUE if vector is categorical
 }
 \description{
-  Check if vector is a categorical vector
+  Check if a vector is a categorical vector
 }
 

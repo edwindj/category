@@ -21,8 +21,8 @@
   categorical vector
 }
 \description{
-  Creating a categorical vector is almost identical to
-  creating a factor. A categorical vector is an extended
-  \code{factor} with extra attributes
+  A categorical vector is an extended \code{factor} with
+  extra attributes Creating a categorical vector is almost
+  identical to creating a factor.
 }
 

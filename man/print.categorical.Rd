@@ -1,13 +1,13 @@
 \name{print.categorical}
 \alias{print.categorical}
-\title{Create a categorical vector}
+\title{Print a categorical vector}
 \usage{
   \method{print}{categorical} (x)
 }
 \arguments{
-  \item{x}{categorical vector'}
+  \item{x}{categorical vector}
 }
 \description{
-  Create a categorical vector
+  Print a \code{\link{categorical}} vector
 }
 
