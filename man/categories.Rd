@@ -8,7 +8,7 @@
 
   ncategories(x)
 
-  categories<-(x, value)
+  categories(x) <- value
 }
 \arguments{
   \item{x}{\code{categorical}}

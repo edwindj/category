@@ -18,6 +18,7 @@ ncategories <- function(x){
 #' Set categories
 #' @rdname categories
 #' @param value \code{data.frame} with information on categories
+#' @usage categories(x) <- value
 #' @export
 `categories<-` <- function(x, value){
   # TODO check value if it is a data.frame and set levels to
