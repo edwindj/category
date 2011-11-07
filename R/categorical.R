@@ -3,6 +3,7 @@
 #' A categorical vector is an extended \code{factor} with extra attributes
 #' Creating a categorical vector is almost identical to creating a factor.
 #' @example ./examples/categorical.R
+#' @export
 #' @param x \code{vector} to be coerced to categorical
 #' @param cats optional \code{data.frame} with category attributes
 #' @param levels optional \code{vector} with levels
@@ -55,6 +56,7 @@ as.categorical <- function(x, ...){
 #' Print a categorical vector
 #'
 #' Print a \code{\link{categorical}} vector
+#' @export
 #' @method print categorical
 #' @param x categorical vector
 print.categorical <- function(x){

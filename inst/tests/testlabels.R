@@ -5,9 +5,8 @@ test_that("labels",{
                     , code = c("M","F")
                     )
   gender <- categorical(c("female", "male", "male"), cats=cats)
-  
-  expect_equal(labels(gender), c("male", "female"))
-  expect_equal(labels(gender, "label"), c("male", "female"))
-  expect_equal(labels(gender, "code"), c("M", "F"))
+  expect_equivalent(labels(gender), c("female", "male", "male"))
+  expect_equivalent(labels(gender, "label"), as.factor(c("female", "male", "male")))
+  expect_equivalent(labels(gender, "code"), as.factor(c("F", "M", "M")))
   
 })
