@@ -8,15 +8,17 @@
 #' @export
 labels.categorical <- function(object, labelname, ...){
   cats <- categories(object)
+  idx <- as.integer(object)
   if (missing(labelname) || is.null(cats[[labelname]]))
-    return(levels(object))
-  as.character(cats[[labelname]])
+    return(levels(object)[idx])
+  cats[[labelname]][idx]
 }
 
 #' Add extra labels to categories
 #'
+#' @example examples/labels.R
 #' @param x \code{categorical}
-#' @param ... named labels
+#' @param ... named labels in same order as \code{categories(x)}
 #  @return adjusted categorical with extra labels
 #' @export
 addLabels <- function(x, ...){
@@ -28,6 +30,7 @@ addLabels <- function(x, ...){
 
 #' Change naming 
 #' 
+#' @example examples/categorical.R
 #' @param x \code{categorical}
 #' @param labelname \code{character} name of desired label
 #  @return adjusted categorical with renamed levels

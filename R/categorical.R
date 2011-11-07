@@ -2,6 +2,7 @@
 #'
 #' A categorical vector is an extended \code{factor} with extra attributes
 #' Creating a categorical vector is almost identical to creating a factor.
+#' @example ./examples/categorical.R
 #' @param x \code{vector} to be coerced to categorical
 #' @param cats optional \code{data.frame} with category attributes
 #' @param levels optional \code{vector} with levels

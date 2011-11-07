@@ -25,4 +25,16 @@
   extra attributes Creating a categorical vector is almost
   identical to creating a factor.
 }
+\examples{
+gendercats <- data.frame( label = c("male", "female")
+                        , code = c("M","F")
+                        )
+
+
+gender <- categorical(c("male", "male", "female", "male"), cats=gendercats)
+
+gender
+categories(gender)
+relabel(gender, "code")
+}
 
