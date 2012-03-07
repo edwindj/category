@@ -1,10 +1,17 @@
-state <- sample(state.abb, 100, replace=TRUE)
+# create a random sample of states
+state <- sample(state.abb, 10, replace=TRUE)
+
+# coerce it to a categorical vector
 state <- categorical(state, levels=state.abb)
 
+# add extra information of states
 state <- addLabels(state, name=state.name, region=state.region, division=state.division)
 
 categories(state)
-labels(state, "name")
+labels(state, "region")
 
-relabel(state, "name")
-
+# create a new cat
+egorical with labels "name"
+state2 <- relabel(state, "name")
+state2
+categories(state2)

@@ -60,7 +60,7 @@ as.categorical <- function(x, ...){
 #' @method print categorical
 #' @param x categorical vector
 print.categorical <- function(x){
-  cats <- levels(x)[x[1:min(length(x),10)]]
+  cats <- levels(x)[x]
   print(noquote(cats))
   cat("Categories:", levels(x))
 }
