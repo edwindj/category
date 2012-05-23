@@ -22,11 +22,14 @@ Usage
 
 ```r
 library(category)
-gender.categories <- data.frame(label = c("male", "female"), code = c("M", 
-    "F"))
+gender.categories <- data.frame( label = c("male", "female")
+                               , code  = c("M","F")
+                               )
 
 
-gender <- categorical(c("male", "male", "female", "male"), cats = gender.categories)
+gender <- categorical( c("male", "male", "female", "male")
+                     , cats=gender.categories
+                     )
 
 print(gender)
 ```
@@ -42,6 +45,30 @@ print(gender)
 
 
 `gender` is a factor but has extra properties that can be used to recode or relabel this factor.
+
+
+
+```r
+is.categorical(gender)
+```
+
+
+
+```
+## [1] TRUE
+```
+
+
+
+```r
+is.factor(gender)
+```
+
+
+
+```
+## [1] TRUE
+```
 
 
 

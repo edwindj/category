@@ -18,21 +18,25 @@ install_github("category", "edwindj")
 Usage
 -----
 
-```{r create}
+```{r tidy=FALSE}
 library(category)
 gender.categories <- data.frame( label = c("male", "female")
                                , code  = c("M","F")
                                )
 
 
-gender <- categorical(c("male", "male", "female", "male"), cats=gender.categories)
+gender <- categorical( c("male", "male", "female", "male")
+                     , cats=gender.categories
+                     )
 
 print(gender)
 ```
 
 `gender` is a factor but has extra properties that can be used to recode or relabel this factor.
 
-```{r categories} 
+```{r categories}
+is.categorical(gender)
+is.factor(gender)
 categories(gender)
 relabel(gender, "code")
 ```
