@@ -26,7 +26,6 @@ state <- addLabels(state, name=state.name, region=state.region, division=state.d
 categories(state)
 labels(state, "region")
 
-# create a new categorical with labels "name"
 state2 <- relabel(state, "name")
 state2
 categories(state2)

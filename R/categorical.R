@@ -59,7 +59,8 @@ as.categorical <- function(x, ...){
 #' @export
 #' @method print categorical
 #' @param x categorical vector
-print.categorical <- function(x){
+#' @param ... extra parameters, currently not used
+print.categorical <- function(x, ...){
   cats <- levels(x)[x]
   print(noquote(cats))
   cat("Categories:", levels(x))
