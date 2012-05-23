@@ -1,5 +1,5 @@
 .First <- function(){
   if (require(devtools)){
-    load_all(".")
+    as.package(".")
   }
 }

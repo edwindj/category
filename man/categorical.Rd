@@ -2,8 +2,8 @@
 \alias{categorical}
 \title{Create a categorical vector}
 \usage{
-  categorical(x = character(), cats, levels, labels =
-  levels, ...)
+  categorical(x = character(), cats, levels,
+    labels = levels, ...)
 }
 \arguments{
   \item{x}{\code{vector} to be coerced to categorical}
