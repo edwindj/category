@@ -5,3 +5,4 @@
 ^README.Rmd
 ^examples
 ^\.travis\.yml$
+^codecov\.yml$

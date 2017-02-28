@@ -13,4 +13,5 @@ Collate:
     'categorical.R'
     'labels.R'
     'pkg.R'
-Suggests: testthat
+Suggests: testthat,
+    covr
