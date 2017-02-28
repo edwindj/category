@@ -2,3 +2,5 @@
 \.Rproj$
 ^\.git
 ^\.Rprofile
+^README.Rmd
+^examples
