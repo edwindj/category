@@ -21,7 +21,7 @@ labels.categorical <- function(object, labelname, ...){
 #' @param ... named labels in same order as \code{categories(x)}
 #  @return adjusted categorical with extra labels
 #' @export
-addLabels <- function(x, ...){
+add_labels <- function(x, ...){
   labels <- list(...)
   cats <- cbind(categories(x), as.data.frame(labels,stringsAsFactors=FALSE))
   categories(x) <- cats

@@ -13,5 +13,7 @@ Collate:
     'categorical.R'
     'labels.R'
     'pkg.R'
-Suggests: testthat,
+Suggests:
+    testthat,
     covr
+RoxygenNote: 5.0.1

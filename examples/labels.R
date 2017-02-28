@@ -5,7 +5,7 @@ state <- sample(state.abb, 10, replace=TRUE)
 state <- categorical(state, levels=state.abb)
 
 # add extra information of states
-state <- addLabels(state, name=state.name, region=state.region, division=state.division)
+state <- add_labels(state, name=state.name, region=state.region, division=state.division)
 
 categories(state)
 labels(state, "region")
