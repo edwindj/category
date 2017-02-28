@@ -4,3 +4,4 @@
 ^\.Rprofile
 ^README.Rmd
 ^examples
+^\.travis\.yml$
