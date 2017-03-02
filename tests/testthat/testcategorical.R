@@ -15,4 +15,5 @@ test_that("categorical works with categories works",{
   
   expect_true(is.categorical(gender))
   expect_equal(levels(gender), c("male", "female"))
+  expect_equal(ncategories(gender), 2)
 })
