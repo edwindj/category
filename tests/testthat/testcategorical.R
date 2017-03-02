@@ -16,4 +16,15 @@ test_that("categorical works with categories works",{
   expect_true(is.categorical(gender))
   expect_equal(levels(gender), c("male", "female"))
   expect_equal(ncategories(gender), 2)
+  expect_true(is.categorical(gender))
+})
+
+describe("as.categorical", {
+  it("works",{
+    gender <- factor(c("male", "female"))
+    gender <- as.categorical(gender)
+    expect_true(is.categorical(gender))
+    cats <- categories(gender)
+    expect_equivalent(cats$label, c("female", "male"))
+  })
 })
